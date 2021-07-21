@@ -1,4 +1,4 @@
-package com.haerul.popularnews;
+package com.easppb.BeritaIn;
 
 import android.app.SearchManager;
 import android.content.Context;
@@ -24,22 +24,21 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.haerul.popularnews.api.ApiClient;
-import com.haerul.popularnews.api.ApiInterface;
-import com.haerul.popularnews.models.Article;
-import com.haerul.popularnews.models.News;
+import com.easppb.BeritaIn.api.ApiClient;
+import com.easppb.BeritaIn.api.ApiInterface;
+import com.easppb.BeritaIn.models.Article;
+import com.easppb.BeritaIn.models.News;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import okhttp3.internal.Util;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity implements  SwipeRefreshLayout.OnRefreshListener{
 
-    public static final String API_KEY = "your secret api key";
+    public static final String API_KEY = "16cdd3ec81e6436d8ab0d46dbcfabc64";
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
     private List<Article> articles = new ArrayList<>();
@@ -170,10 +169,12 @@ public class MainActivity extends AppCompatActivity implements  SwipeRefreshLayo
                 Article article = articles.get(position);
                 intent.putExtra("url", article.getUrl());
                 intent.putExtra("title", article.getTitle());
+                intent.putExtra("desc", article.getDescription());
                 intent.putExtra("img",  article.getUrlToImage());
                 intent.putExtra("date",  article.getPublishedAt());
                 intent.putExtra("source",  article.getSource().getName());
                 intent.putExtra("author",  article.getAuthor());
+
 
                 Pair<View, String> pair = Pair.create((View)imageView, ViewCompat.getTransitionName(imageView));
                 ActivityOptionsCompat optionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(
@@ -204,7 +205,7 @@ public class MainActivity extends AppCompatActivity implements  SwipeRefreshLayo
         MenuItem searchMenuItem = menu.findItem(R.id.action_search);
 
         searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
-        searchView.setQueryHint("Search Latest News...");
+        searchView.setQueryHint("Cari berita...");
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {

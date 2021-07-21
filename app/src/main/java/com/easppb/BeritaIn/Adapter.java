@@ -1,4 +1,4 @@
-package com.haerul.popularnews;
+package com.easppb.BeritaIn;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -20,7 +20,7 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.RequestOptions;
 import com.bumptech.glide.request.target.Target;
-import com.haerul.popularnews.models.Article;
+import com.easppb.BeritaIn.models.Article;
 import java.util.List;
 
 
@@ -74,7 +74,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
                 .into(holder.imageView);
 
         holder.title.setText(model.getTitle());
-        holder.desc.setText(model.getDescription());
         holder.source.setText(model.getSource().getName());
         holder.time.setText(" \u2022 " + Utils.DateToTimeFormat(model.getPublishedAt()));
         holder.published_ad.setText(Utils.DateFormat(model.getPublishedAt()));
@@ -108,7 +107,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
 
             itemView.setOnClickListener(this);
             title = itemView.findViewById(R.id.title);
-            desc = itemView.findViewById(R.id.desc);
             author = itemView.findViewById(R.id.author);
             published_ad = itemView.findViewById(R.id.publishedAt);
             source = itemView.findViewById(R.id.source);

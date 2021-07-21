@@ -1,4 +1,4 @@
-package com.haerul.popularnews;
+package com.easppb.BeritaIn;
 
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;

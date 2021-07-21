@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.haerul.popularnews.MainActivity">
+    tools:context="com.easppb.BeritaIn.MainActivity">
 
     <item
         android:id="@+id/action_search"
@@ -12,11 +12,4 @@
         app:actionViewClass="android.support.v7.widget.SearchView"
         app:showAsAction="collapseActionView|always"
         android:theme="@android:style/Theme.Holo.Light.DarkActionBar"/>
-
-    <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="Settings"
-        app:showAsAction="never"/>
-
 </menu>

@@ -1,4 +1,4 @@
-package com.haerul.popularnews;
+package com.easppb.BeritaIn;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -8,7 +8,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
@@ -26,13 +25,13 @@ import com.bumptech.glide.request.RequestOptions;
 public class NewsDetailActivity extends AppCompatActivity implements AppBarLayout.OnOffsetChangedListener{
 
     private ImageView imageView;
-    private TextView appbar_title, appbar_subtitle, date, time, title;
+    private TextView appbar_title, appbar_subtitle, desc, date, time, title;
     private boolean isHideToolbarView = false;
     private FrameLayout date_behavior;
     private LinearLayout titleAppbar;
     private AppBarLayout appBarLayout;
     private Toolbar toolbar;
-    private String mUrl, mImg, mTitle, mDate, mSource, mAuthor;
+    private String mUrl, mImg, mTitle, mDesc, mDate, mSource, mAuthor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +53,7 @@ public class NewsDetailActivity extends AppCompatActivity implements AppBarLayou
         imageView = findViewById(R.id.backdrop);
         appbar_title = findViewById(R.id.title_on_appbar);
         appbar_subtitle = findViewById(R.id.subtitle_on_appbar);
+        desc = findViewById(R.id.desc);
         date = findViewById(R.id.date);
         time = findViewById(R.id.time);
         title = findViewById(R.id.title);
@@ -62,6 +62,7 @@ public class NewsDetailActivity extends AppCompatActivity implements AppBarLayou
         mUrl = intent.getStringExtra("url");
         mImg = intent.getStringExtra("img");
         mTitle = intent.getStringExtra("title");
+        mDesc = intent.getStringExtra("desc");
         mDate = intent.getStringExtra("date");
         mSource = intent.getStringExtra("source");
         mAuthor = intent.getStringExtra("author");
@@ -77,6 +78,7 @@ public class NewsDetailActivity extends AppCompatActivity implements AppBarLayou
 
         appbar_title.setText(mSource);
         appbar_subtitle.setText(mUrl);
+        desc. setText(mDesc);
         date.setText(Utils.DateFormat(mDate));
         title.setText(mTitle);
 

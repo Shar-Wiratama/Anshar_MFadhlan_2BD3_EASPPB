@@ -1,4 +1,4 @@
-package com.haerul.popularnews;
+package com.easppb.BeritaIn;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

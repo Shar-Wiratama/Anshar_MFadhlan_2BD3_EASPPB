@@ -1,4 +1,4 @@
-package com.haerul.popularnews.models;
+package com.easppb.BeritaIn.models;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
