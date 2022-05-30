@@ -1,4 +1,4 @@
-package com.easppb.BeritaIn.models;
+package com.easppb.BeritaNow.models;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

@@ -1,4 +1,4 @@
-package com.easppb.BeritaIn;
+package com.easppb.BeritaNow;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -21,6 +21,7 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 import com.bumptech.glide.request.RequestOptions;
+
 
 public class NewsDetailActivity extends AppCompatActivity implements AppBarLayout.OnOffsetChangedListener{
 

@@ -1,4 +1,4 @@
-package com.easppb.BeritaIn.api;
+package com.easppb.BeritaNow.api;
 
 import java.security.cert.CertificateException;
 

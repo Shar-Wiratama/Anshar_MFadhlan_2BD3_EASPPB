@@ -1,4 +1,4 @@
-package com.easppb.BeritaIn;
+package com.easppb.BeritaNow;
 
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;

@@ -1,4 +1,4 @@
-package com.easppb.BeritaIn;
+package com.easppb.BeritaNow;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

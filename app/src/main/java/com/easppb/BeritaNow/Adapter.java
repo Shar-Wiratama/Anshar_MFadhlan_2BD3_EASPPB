@@ -1,4 +1,4 @@
-package com.easppb.BeritaIn;
+package com.easppb.BeritaNow;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -20,7 +20,7 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.RequestOptions;
 import com.bumptech.glide.request.target.Target;
-import com.easppb.BeritaIn.models.Article;
+import com.easppb.BeritaNow.models.Article;
 import java.util.List;
 
 

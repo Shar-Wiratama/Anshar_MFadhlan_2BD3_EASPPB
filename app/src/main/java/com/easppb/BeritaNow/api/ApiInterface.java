@@ -1,6 +1,6 @@
-package com.easppb.BeritaIn.api;
+package com.easppb.BeritaNow.api;
 
-import com.easppb.BeritaIn.models.News;
+import com.easppb.BeritaNow.models.News;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

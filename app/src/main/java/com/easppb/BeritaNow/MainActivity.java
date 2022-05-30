@@ -1,4 +1,4 @@
-package com.easppb.BeritaIn;
+package com.easppb.BeritaNow;
 
 import android.app.SearchManager;
 import android.content.Context;
@@ -24,10 +24,10 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.easppb.BeritaIn.api.ApiClient;
-import com.easppb.BeritaIn.api.ApiInterface;
-import com.easppb.BeritaIn.models.Article;
-import com.easppb.BeritaIn.models.News;
+import com.easppb.BeritaNow.api.ApiClient;
+import com.easppb.BeritaNow.api.ApiInterface;
+import com.easppb.BeritaNow.models.Article;
+import com.easppb.BeritaNow.models.News;
 
 import java.util.ArrayList;
 import java.util.List;
